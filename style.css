@@ -1,6 +1,6 @@
 body{
     font-family: "Noto Sans", "Space Mono", monospace;
-    background-color: rgb(161, 189, 175);
+    background-color: rgb(170, 207, 176);
 }
 
 header{
@@ -20,7 +20,7 @@ h2{
 }
 
 #zeblog-Logo{
-    max-width: 50%;
+    max-width: 25%;
     height: auto;
 }
 
@@ -53,22 +53,27 @@ h2{
     text-align: center;
 }
 
-.Games-Sections{
+.Game-Container{
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  background-color: whitesmoke;
+  gap: 50px;
+}
+
+.Games-Sections{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* background-color: whitesmoke; */
   padding: 0rem 2rem 2rem 2rem;
-  margin: 1rem;
-  border-radius: 32px;
-  width: 50vw;
-  min-width: 800px;
+  border-radius: 0.5rem;
+  width: fit-content;
 }
 
 .Game-Image{
   border: solid 2px black;
-  width: fit-content;
-  height: 200px;
+  width: max-content;
+  height: auto;
+  box-shadow: 1px 1px 5px black;
 }
 
 
@@ -77,16 +82,25 @@ h2{
   display: flex;
   flex-direction: column;
   gap: 4rem;
-  background-color: burlywood;
+  /* background-color: rgb(197, 197, 197); */
   padding: 2rem;
-  border-radius: 1rem;
-  box-shadow: 5px 5px rgb(204, 169, 124);
+  /* border-radius: 1rem; */
 }
 
-.Game-Content{
+.Game-Main{
   display: flex;
   flex-direction: row;
-  gap: 1rem;
+  align-items:flex-start;
+  gap: 2rem;
+}
+
+.Game-Info{
+  /* background-color: rgb(214, 238, 220);
+  box-shadow: 0px 0px 4px rgb(162, 179, 162); */
+  padding: 0rem 2rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
 }
 
 .Game-Title{
@@ -95,6 +109,17 @@ h2{
   color: black;
 }
 
-.Game-Description{
-  font-size: 1rem;
+.Info-Titles{
+  text-transform: uppercase;
+  display: flex;
+  width: fit-content;
+}
+
+.Game-Specs{
+  color: #2f352f;
+  text-transform:none;
+}
+
+.Info-Titles-Container{
+  line-height: 0.1rem;
 }
