@@ -1,5 +1,5 @@
 body{
-    font-family: "Anonymous Pro", "Space Mono", monospace;
+    font-family: "Noto Sans", "Space Mono", monospace;
     background-color: rgb(161, 189, 175);
 }
 
@@ -10,13 +10,22 @@ header{
     margin: 2rem;
 }
 
-#Spelunky-Logo{
+h1{
+  font-size: 8rem;
+  color: white;
+  line-height: 1rem;
+}
+h2{
+  font-size: 4rem;
+}
+
+#zeblog-Logo{
     max-width: 50%;
     height: auto;
 }
 
 .main-buttons {
-  border-radius: 0.8rem;
+  border-radius: 2rem;
   background-color: rgb(255, 255, 255);
   border: none;
   color: #2f352f;
@@ -42,4 +51,50 @@ header{
     bottom: 0;
     width: 100%;
     text-align: center;
+}
+
+.Games-Sections{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: whitesmoke;
+  padding: 0rem 2rem 2rem 2rem;
+  margin: 1rem;
+  border-radius: 32px;
+  width: 50vw;
+  min-width: 800px;
+}
+
+.Game-Image{
+  border: solid 2px black;
+  width: fit-content;
+  height: 200px;
+}
+
+
+.Game-Div{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  background-color: burlywood;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 5px 5px rgb(204, 169, 124);
+}
+
+.Game-Content{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.Game-Title{
+  font-size: 3rem;
+  text-decoration: none;
+  color: black;
+}
+
+.Game-Description{
+  font-size: 1rem;
 }
